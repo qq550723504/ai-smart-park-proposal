@@ -489,12 +489,17 @@
         </details>
 
         <details class="scenario">
-          <summary><span class="scenario-num">06</span><span class="scenario-title"><b>AI智能安防事件研判</b><span>从单点告警到多源研判 · 安防中心 / 应急管理</span></span><span class="scenario-tags"><span class="tag">P1</span><span class="tag">风险治理</span><span class="chev">⌄</span></span></summary>
+          <summary><span class="scenario-num">06</span><span class="scenario-title"><b>AI安全运营与事件研判中心</b><span>从告警接收到风险研判—协同处置—复盘优化 · 安防中心 / 应急管理</span></span><span class="scenario-tags"><span class="tag">P1</span><span class="tag">风险治理</span><span class="chev">⌄</span></span></summary>
           <div class="scenario-body">
-            <div class="scenario-lead"><div class="problem"><span class="scenario-label">客户问题</span><p>视频、门禁、消防和巡更产生大量告警，单点事件缺少上下文，值班人员需要人工核查，容易出现误报、漏报和处置不一致。</p></div><div class="solution"><span class="scenario-label">AI解决方式</span><p>融合视频事件、门禁记录、空间权限、人员轨迹和应急预案，对事件补充上下文、进行风险分级、说明依据并推荐处置方式。</p></div></div>
-            <span class="scenario-label">业务闭环</span><div class="process"><div>接收视频、门禁或消防事件。</div><div>关联时间、位置、人员和权限。</div><div>判断风险等级并解释依据。</div><div>推荐预案并通知责任人员。</div><div>记录处置过程并生成复盘。</div></div>
-            <div class="scenario-columns"><div><span class="scenario-label">数据与系统基础</span><ul><li>视频算法事件与截图摘要</li><li>门禁权限、访客和空间数据</li><li>应急预案、值班与处置流程</li></ul></div><div><span class="scenario-label">主要输出</span><ul><li>风险等级、证据和影响范围</li><li>处置建议、通知与事件工单</li><li>事件闭环记录和复盘报告</li></ul></div><div><span class="scenario-label">建议评估指标</span><ul><li>告警研判时间和误报工作量</li><li>高风险事件响应与流程合规</li><li>证据完整率和复盘完成率</li></ul></div></div>
-            <div class="sales-line"><div class="sales"><b>客户价值 / 售前卖点：</b>体现多源数据融合和应急协同，适合大型园区、产业园和高安全等级项目。</div><div class="guard"><b>实施条件：</b>视频和人员数据必须明确授权、最小化使用、留存周期和审计机制。</div></div>
+            <div class="scenario-lead"><div class="problem"><span class="scenario-label">客户问题</span><p>园区现有视频、门禁、消防、巡更等系统能够分别产生告警，但事件分散、重复告警较多，缺少统一上下文和标准处置流程。值班人员往往需要跨系统查询、人工确认和电话沟通，难以及时判断事件等级、影响范围与下一步动作。</p></div><div class="solution"><span class="scenario-label">AI解决方式</span><p>在不替代原有视频、门禁和消防系统的前提下，AI汇聚授权范围内的事件数据、空间信息、值班规则和应急预案，对重复或关联告警进行归并，生成事件时间线和证据摘要，辅助判断风险等级、影响范围和处置优先级。高风险场景经人工确认后，再触发通知、工单和升级流程。</p></div></div>
+            <span class="scenario-label">业务闭环</span><div class="process"><div>配置重点区域、风险规则和值班预案。</div><div>接收并归并告警，关联时间、位置、授权通行记录和设备状态。</div><div>生成事件卡片、证据摘要、风险等级和影响范围。</div><div>推荐预案，人工确认后通知责任人并创建事件工单。</div><div>记录处置过程，生成复盘报告并优化规则。</div></div>
+            <span class="scenario-label">具体落地场景</span><div class="scenario-columns">
+              <div><span class="scenario-label">夜间异常通行</span><p class="note">凌晨非值班时段进入重点区域，AI关联门禁、值班和预约信息，生成异常事件并通知值班人员核验。</p></div>
+              <div><span class="scenario-label">门禁异常与区域滞留</span><p class="note">连续刷卡失败并在重点区域停留，AI将多个告警归并为关联事件，升级风险并生成现场核验工单。</p></div>
+              <div><span class="scenario-label">消防与设备告警联动</span><p class="note">烟感告警与温度、设备状态异常同时出现，AI形成事件时间线并推荐应急预案和责任通知。</p></div>
+            </div>
+            <div class="scenario-columns"><div><span class="scenario-label">数据与系统基础</span><ul><li>视频平台输出的结构化事件和截图摘要</li><li>门禁、访客、消防、巡更和工单数据</li><li>园区空间、重点区域和责任区域信息</li><li>值班排班、应急预案和升级规则</li></ul></div><div><span class="scenario-label">主要输出</span><ul><li>事件卡片、风险等级和证据链</li><li>事件时间线、影响范围和关联设备</li><li>处置建议、责任人、通知和升级任务</li><li>事件工单、处置过程和复盘报告</li></ul></div><div><span class="scenario-label">建议评估指标</span><ul><li>平均告警研判时间</li><li>重复告警占比和有效告警率</li><li>高风险事件响应与流程合规</li><li>事件证据完整率和闭环完成率</li></ul></div></div>
+            <div class="sales-line"><div class="sales"><b>客户价值 / 售前卖点：</b>把“看视频、接告警、查记录”升级为“事件自动归并、风险辅助研判、协同处置和可审计复盘”，在现有安防系统之上构建安全运营中枢。</div><div class="guard"><b>实施条件：</b>仅使用授权范围内的必要数据，默认不调用完整人员轨迹；消防、门禁等原系统仍是权威来源，高风险动作必须人工确认并保留审计记录。</div></div>
           </div>
         </details>
 
@@ -593,7 +598,7 @@
           <div class="agent"><b>AI运营Agent</b><span>日报、异常分析、运营建议；调用指标、报表与通知工具。</span></div>
           <div class="agent"><b>AI物业Agent</b><span>咨询、投诉和服务请求；调用知识、工单与回访工具。</span></div>
           <div class="agent"><b>AI运维Agent</b><span>设备监测、巡检和维修；调用设备、工单与备件工具。</span></div>
-          <div class="agent"><b>AI安全Agent</b><span>事件研判、预案和应急协同；调用事件、门禁与通知工具。</span></div>
+          <div class="agent"><b>AI安全Agent</b><span>事件归并、风险研判和应急协同；调用事件、门禁、工单与通知工具，关键动作须人工确认。</span></div>
         </div>
         <div class="governance-grid">
           <div class="governance-item"><b>身份与权限</b><p>继承现有组织、角色和数据权限，Agent不能绕过业务系统授权。</p></div>
